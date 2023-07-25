@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #12bdac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.board_wrap {
+    background-color: #0ca192;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    background-color: #12bdac;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.cell .x {
+    color: #545454;
+}
+
+.cell .o {
+    color: #f2ebd3;
+}
